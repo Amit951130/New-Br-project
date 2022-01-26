@@ -1,0 +1,413 @@
+*
+    {
+        margin: 0;
+        padding: 0;
+    }
+html, body 
+    {
+        font-family: Verdana,sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+    } 
+
+.padding 
+   {
+    padding:8px 16px; 
+   }
+
+.margin
+    {
+        margin:20px 30px;
+    }
+
+.heading
+   {
+       font-weight: normal;
+   }
+
+    /* header is starting here  */ 
+
+header 
+    {
+       background-color: white;
+       height:7vh;
+       box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);             
+       padding:10px 16px; 
+       overflow:hidden;
+    }
+nav
+    {
+        display: block;
+        position:sticky;
+        top:0px;
+        z-index: 1;     
+    }
+
+.link
+    {
+       color:rgb(27, 27, 27);
+       text-decoration: none;
+       padding:18px 16px;
+    }
+.leftside
+    {
+       float:left;
+    }
+.rightside
+     {
+         float:right;
+     }
+.letter_spacing
+     {
+         letter-spacing: 4px;
+     }
+
+.button:hover 
+     {
+         background-color: rgb(170, 151, 151);
+         display:inline-block;        
+         overflow: hidden;
+         vertical-align:middle;
+         text-align:center;
+         
+     }
+    /* first section is starting  */
+
+.section1
+    {
+        display: block;
+        position: relative;      
+    }
+
+.up_image 
+    {       
+       width:100%;
+       display: block;
+       object-fit: cover;
+       position:relative;
+    }
+
+.section1 .contactme 
+    {
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        transform: translate(-40%, -60%);
+        width:20% ;
+        height:40px;
+        font-size: 20px;
+        color:white;
+        font-weight: bold;
+        border:none;
+        border-radius: 20px;
+        background-color: transparent;
+        transform-style:preserve-3d;
+        cursor: pointer;
+        box-shadow: 0 4px 5px rgb(70, 68, 68), 0 5px 13px rgb(82, 78, 78);
+        transition:all 0.2s; 
+        animation: contactme 5s infinite linear; 
+    }
+.section1 .contactme a 
+{
+    color:white; 
+    text-decoration:none;
+    
+}
+.section1 .contactme:active 
+{
+    transform: translate(15px, 20px);
+    box-shadow: 0 5px 10px rgb(70, 68, 68), 0 10px 20px rgb(82, 78, 78);
+}
+@keyframes contactme  
+{
+    0% 
+    {
+        transform: translate(-40%, -60%);  
+        transform:scale(1,1);
+    }
+    40% 
+    {
+         transform: translate(-40%, -60%);  
+        /* background-color: rgb(255, 255, 255);   */
+        transform:scale(1.14,1.1);
+    }
+    100% 
+    {
+         transform: translate(-40%, -60%); 
+        transform:scale(1,1);
+    }
+}
+
+.main-heading 
+    {
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:white;
+        font-size: 2.5rem;
+    }
+.BR 
+    {
+        background-color: rgb(0, 0, 0,0.7);
+        padding:8px;
+        margin-right: 16px;
+    }
+
+ .heading2
+   {
+       margin:18px 30px;
+       display: block;
+    }  
+.project-heading
+    {
+        border-bottom:1px ridge rgb(177, 162, 162);
+        display: block;        
+    }
+
+
+.section2 
+    {
+        margin:0 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;        
+        row-gap: 20px;
+        column-gap: 20px;
+        
+    }
+
+.grid-img
+    {
+       position:relative;
+       box-shadow:0 1px 8px rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19) ;
+
+    }
+.h4
+     {
+         color:white;
+         background-color: black;
+         position: absolute;
+         left:0px;
+         top:0px;
+         padding:4px;
+     }
+
+.section3 
+     {
+        margin:0 30px;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;               
+         row-gap: 20px;
+         column-gap: 14px;
+         
+     }                                        
+                                         
+                    
+.h3  
+     {
+          padding:6px 3px;
+          font-size: 1.3rem;
+
+     }
+.h3-1 
+     {
+        padding:6px 3px;
+         opacity:0.5;
+         font-size: 1rem;
+     }
+.grid-img2
+     {
+        position:relative;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;       
+     }
+
+.button2
+     {
+         text-align:center;
+        background-color: rgb(240, 240, 240);
+         width:100%;
+         padding:9px 0;
+         font-size: 17px;
+         margin-top:10px;
+         border:none;
+         border-radius: 2px;
+         cursor: pointer;
+     }
+.button2:hover  
+      {
+          background-color: rgb(134, 122, 122);
+      }
+
+.form-padding
+      {
+          padding:6px 6px;
+      }
+.form-margin
+      {
+          margin:0.8rem 0;
+      }
+.input  
+     {
+           display: block;
+           width:100%;
+           font-size: large;
+           border:1px ridge rgba(95, 92, 92, 0.4);
+           border-radius: 2px;
+     }
+
+.lower-button
+      {
+          background-color: black;
+          color: white;
+          font-size:medium;
+          padding:8px 8px;
+          cursor: pointer;
+          outline: none;
+          border:none;
+          margin:10px 0;
+      }
+.lower-button:hover
+       {
+           background-color: rgb(190, 186, 186);
+           color:black;
+       }
+
+.lower
+     {
+        display: block;
+        margin-bottom: 0px;
+     }
+
+footer 
+      {
+          display: block;
+          background-color: black;
+          color:white;
+          text-align: center;
+          position: relative;
+          height:12vh;
+      }
+.footer
+     {
+         position: absolute;
+         top:50%;
+         left:50%;
+         transform: translate(-50%, -50%);
+     }
+
+.link-bottom
+        {  
+            color:white;
+        }
+.link-bottom:hover
+        {
+            color:rgb(19, 138, 23);
+
+        }
+
+.mobile 
+        {
+            visibility: hidden;
+            
+        }
+.mobile-button
+        {            
+            height:30px;
+            width:40px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background-color: white;
+            float:right;
+            position: absolute;
+            right:0;
+            top:3vh;
+        }
+.mobile-button img 
+         {
+             object-fit: cover;
+         }
+
+.mobile ul li
+        {
+            list-style-type: none; 
+            padding:5px 5px;
+            background-color:rgb(255, 255, 255);           
+        }
+
+.mobile ul 
+         {
+              width:40vw;
+              height:60vh;
+              position: absolute;
+              top:7vh;
+              right:0;
+              border-radius: 5px;
+            
+         }
+.mobile ul a 
+        {
+            text-decoration: none;
+            color:rgb(0, 0, 0);
+        }
+
+.mobile ul 
+        {
+           display: none;
+        }
+
+.mobile:hover ul
+      {
+          display: block;
+      }
+.mobile ul li:hover 
+      {
+          display: block;
+          background-color:green;
+
+      }
+
+
+
+
+
+
+ @media only screen and (max-width:1000px)  
+        {
+         .section2 
+                {  
+                    grid-template-columns: 1fr 1fr ;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                }
+        .section3 
+                {  
+                    grid-template-columns: 1fr 1fr ;
+                    grid-template-rows: 1fr 1fr;
+                }
+        }
+        
+ @media only screen and (max-width:600px)  
+        {
+         .section2 
+                {  
+                    grid-template-columns: 1fr ;
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+                }
+         .section3
+                {  
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                }
+                
+         header .rightside 
+               {
+                   visibility: hidden;
+               }
+
+        .mobile
+               {
+                    visibility: visible;
+               }
+            
+        }  
